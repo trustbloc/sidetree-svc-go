@@ -1,4 +1,4 @@
-# sidetree-core-go
+# sidetree-svc-go
 
 This library implements components of a service conforming to the [Sidetree Protocol](https://github.com/decentralized-identity/sidetree/blob/master/docs/protocol.md>).
 
