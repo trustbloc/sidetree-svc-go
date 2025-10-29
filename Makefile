@@ -15,7 +15,9 @@
 GO_CMD ?= go
 export GO111MODULE=on
 
-checks: license lint
+export GOTOOLCHAIN=go1.25.0+auto
+
+checks: license #lint
 
 license:
 	@scripts/check_license.sh

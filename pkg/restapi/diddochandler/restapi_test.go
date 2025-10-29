@@ -116,7 +116,7 @@ func httpGet(t *testing.T, url string) ([]byte, error) {
 
 func handleHTTPResp(t *testing.T, resp *http.Response) ([]byte, error) {
 	if status := resp.StatusCode; status != http.StatusOK {
-		return nil, fmt.Errorf(string(read(t, resp)))
+		return nil, fmt.Errorf("%s", string(read(t, resp)))
 	}
 
 	return read(t, resp), nil
