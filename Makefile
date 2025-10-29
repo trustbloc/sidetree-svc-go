@@ -15,6 +15,8 @@
 GO_CMD ?= go
 export GO111MODULE=on
 
+export GOTOOLCHAIN=go1.25.0+auto
+
 checks: license lint
 
 license:
