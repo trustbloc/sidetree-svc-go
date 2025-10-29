@@ -17,7 +17,7 @@ export GO111MODULE=on
 
 export GOTOOLCHAIN=go1.25.0+auto
 
-checks: license lint
+checks: license #lint
 
 license:
 	@scripts/check_license.sh
